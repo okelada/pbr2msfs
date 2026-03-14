@@ -16,5 +16,6 @@ It works for me, but no warranties.
 	>If it fails you can always hand select them individually. Always double check.
 -	The ARM, NRM, RGB+Alpha and inverted Y Normal textures will be automatically generated and you can save them somewhere.
 -	Now, for the MSFS workflow, go to Blender for example, and create an fs-material with the generated RGBA, ARM and inverted Normal textures, maybe Emission too.
+	>You may need to activate Alpha Blend.
 
 Needs Magick.NET nuggets to support the EXR format.
