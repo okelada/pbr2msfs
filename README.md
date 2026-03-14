@@ -10,11 +10,11 @@ It works for me, but no warranties.
 	Probably in a format directly supported by .NET. <br>
 	>Not all of them are needed, of course.
 
-	>It does nothing with the MSFS emission texture.
+	>It does nothing with the MSFS Emission texture, that's standalone.
 -	Select the containing folder.
 -	The program will try to identify each PBR texture based on the filename. It searches for the common tokens, you know which ones.<br>
 	>If it fails you can always hand select them individually. Always double check.
 -	The ARM, NRM, RGB+Alpha and inverted Y Normal textures will be automatically generated and you can save them somewhere.
--	Now, for the MSFS workflow, go to Blender for example, and create an fs-material with the generated RGBA, ARM and inverted Normal textures, maybe emission too.
+-	Now, for the MSFS workflow, go to Blender for example, and create an fs-material with the generated RGBA, ARM and inverted Normal textures, maybe Emission too.
 
-Needs Magick.NET to support the EXR format.
+Needs Magick.NET nuggets to support the EXR format.
