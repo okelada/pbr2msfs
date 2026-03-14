@@ -6,12 +6,15 @@ It works for me, but no warranties.
 
 # Usage:
 
--	Bake or export your base RGB, Alpha, non-inverted Y normal, Ambient Occlusion, Metallic and Roughness textures with your favorite tool.
+-	Bake or export your base RGB, Alpha, non-inverted Y Normal, Ambient Occlusion, Metallic and Roughness textures with your favorite tool.
 	Probably in a format directly supported by .NET. <br>
 	>Not all of them are needed, of course.
+
+	>It does nothing with the MSFS emission texture.
 -	Select the containing folder.
 -	The program will try to identify each PBR texture based on the filename. It searches for the common tokens, you know which ones.<br>
-	>If it fails you can always hand correct it. Always double check.
--	The ARM, NRM, RGB+Alpha and inverted Y normal textures will be generated and you can save them somewhere.
+	>If it fails you can always hand select them individually. Always double check.
+-	The ARM, NRM, RGB+Alpha and inverted Y Normal textures will be automatically generated and you can save them somewhere.
+-	Now, for the MSFS workflow, go to Blender for example, and create an fs-material with the generated RGBA, ARM and inverted Normal textures, maybe emission too.
 
-Needs Magick.NET to support EXR format.
+Needs Magick.NET to support the EXR format.
