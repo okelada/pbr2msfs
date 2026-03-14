@@ -6,9 +6,12 @@ It works for me, but no warranties.
 
 # Usage:
 
--	Bake your textures with your favorite tool. Probably in PNG format or another one supported by .NET.
+-	Bake or export your base RGB, ALpha, non-inverted normal, Ambient Occlusion, Metallic and Roughness textures with your favorite tool. <br>
+	Probably in a format directly supported by .NET. <br>
+	Not all of them are needed, of course.
 -	Select the containing folder.
--	The program will try to identify each PBR texture based on the filename. If it fails you can always hand correct it.
+-	The program will try to identify each PBR texture based on the filename. It searches for the common tokens, you know which ones.<br>
+	>If it fails you can always hand correct it. Always double check.
 -	The ARM, NRM, RGB+Alpha and inverted Y normal textures will be generated and you can save them somewhere.
 
-
+Needs Magick.NET to suppor EXR format.
