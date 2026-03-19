@@ -20,6 +20,7 @@ It works for me, but no warranties.
 	- Metallic: "metal"
 	- Normal: "nor"
 	>Search is case insensitive and partial substring.
+
 	>If it fails you can always hand select them individually. Always double check.
 -	The ARM, NRM, RGB+Alpha and inverted Y Normal textures will be automatically generated and you can save them somewhere.
 -	Now, for the MSFS workflow, go to Blender for example, and create an fs-material with the generated RGBA, ARM and inverted Normal textures, maybe Emission too.
