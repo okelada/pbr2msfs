@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             btLoadFolder = new Button();
-            cbFlipNormalsG = new CheckBox();
             lvLog = new ListView();
             groupBox1 = new GroupBox();
             label23 = new Label();
@@ -124,19 +123,6 @@
             btLoadFolder.Text = "Preload Folder";
             btLoadFolder.UseVisualStyleBackColor = true;
             btLoadFolder.Click += btChooseFolder_Click;
-            // 
-            // cbFlipNormalsG
-            // 
-            cbFlipNormalsG.AutoSize = true;
-            cbFlipNormalsG.Checked = true;
-            cbFlipNormalsG.CheckState = CheckState.Checked;
-            cbFlipNormalsG.Location = new Point(1146, 63);
-            cbFlipNormalsG.Name = "cbFlipNormalsG";
-            cbFlipNormalsG.Size = new Size(165, 24);
-            cbFlipNormalsG.TabIndex = 1;
-            cbFlipNormalsG.Text = "invert Normal Green";
-            cbFlipNormalsG.UseVisualStyleBackColor = true;
-            cbFlipNormalsG.CheckedChanged += cbFlipNormalsG_CheckedChanged;
             // 
             // lvLog
             // 
@@ -764,7 +750,7 @@
             // 
             btSaveAll.Enabled = false;
             btSaveAll.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btSaveAll.Location = new Point(169, 82);
+            btSaveAll.Location = new Point(15, 165);
             btSaveAll.Name = "btSaveAll";
             btSaveAll.Size = new Size(131, 48);
             btSaveAll.TabIndex = 9;
@@ -887,7 +873,6 @@
             Controls.Add(txtFolder);
             Controls.Add(groupBox1);
             Controls.Add(lvLog);
-            Controls.Add(cbFlipNormalsG);
             Controls.Add(btLoadFolder);
             Controls.Add(groupBox2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -925,7 +910,6 @@
         #endregion
 
         private Button btLoadFolder;
-        private CheckBox cbFlipNormalsG;
         private ListView lvLog;
         private GroupBox groupBox1;
         private PictureBox pbNormalInput;

@@ -674,7 +674,7 @@ namespace pbr2msfs
                     bgrValues[4 * pos + 0] = roughnessValues != null ? roughnessValues[0 + 4 * pos] : (byte)0;//B
                     bgrValues[4 * pos + 1] = NormalValues != null ? NormalValues[2 + 4 * pos] : (byte)0;//G
                     bgrValues[4 * pos + 2] = metallicValues != null ? metallicValues[0 + 4 * pos] : (byte)0;//R
-                    bgrValues[4 * pos + 3] = NormalValues != null ? (cbFlipNormalsG.Checked? (byte)(255 - NormalValues[1 + 4 * pos]): NormalValues[1 + 4 * pos]) : (byte)0;//A
+                    bgrValues[4 * pos + 3] = NormalValues != null ? (byte)(255 - NormalValues[1 + 4 * pos]): (byte)0;//A
                 }
 
                 // Copy the RGB values back to the bitmap
@@ -870,17 +870,16 @@ namespace pbr2msfs
             }
             try
             {
-                if (cbFlipNormalsG.Checked)
+
+                if (FlipNormalGreens())
                 {
-                    if (FlipNormalGreens())
+                    if (NormalOutputImage != null)
                     {
-                        if (NormalOutputImage != null)
-                        {
-                            pbNormalOutput.Image = NormalOutputImage;
-                            lbInvertedGNormalSizes.Text = GetImageSizes(NormalOutputImage);
-                        }
+                        pbNormalOutput.Image = NormalOutputImage;
+                        lbInvertedGNormalSizes.Text = GetImageSizes(NormalOutputImage);
                     }
                 }
+         
 
 
                 if (MergeAlphaChannel())
