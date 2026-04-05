@@ -776,9 +776,9 @@
             label16.Font = new Font("Segoe UI", 7.8F);
             label16.Location = new Point(1099, 220);
             label16.Name = "label16";
-            label16.Size = new Size(52, 17);
+            label16.Size = new Size(72, 17);
             label16.TabIndex = 41;
-            label16.Text = "Normal";
+            label16.Text = "Inv. Y normal";
             // 
             // pbARMOutput
             // 
