@@ -4,6 +4,10 @@ Yet another tool to generate PBR texture composites, etc. Mainly for MSFS.
 
 It works for me, but no warranties.
 
+
+![Capture.](/artwork/Capture.jpg)
+
+
 # Usage:
 
 -	Bake or export your base RGB, Alpha, non-inverted Y Normal, Ambient Occlusion, Metallic and Roughness textures with your favorite tool.
