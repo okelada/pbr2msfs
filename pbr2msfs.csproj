@@ -12,6 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="_ViewerForm.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="okelada.ico" />
   </ItemGroup>
 
@@ -20,11 +24,12 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="_ViewerForm.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.11.0" />
-    <PackageReference Include="Magick.NET.Core" Version="14.11.0" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.11.1" />
+    <PackageReference Include="Magick.NET.Core" Version="14.11.1" />
   </ItemGroup>
 
   <ItemGroup>
