@@ -5,7 +5,7 @@ Yet another tool to generate PBR texture composites, etc. Mainly for MSFS.
 It works for me, but no warranties.
 
 
-![Capture.](/artwork/Captura.png)
+![Capture.](/artwork/captura.png)
 
 
 # Usage:
